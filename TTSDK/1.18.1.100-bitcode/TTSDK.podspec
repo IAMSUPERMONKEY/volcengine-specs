@@ -84,47 +84,47 @@
 
     end
 
-    spec.subspec 'LivePull' do |subspec|
-      subspec.public_header_files = [
-        'TTSDK/TTVideoLive/**/*.h',
-      ]
-      subspec.source_files = [
-        'TTSDK/TTVideoLive/**/*',
-      ]
-      subspec.vendored_libraries = [
-        'TTSDK/TTVideoLive/**/*.a',
-        'TTSDK/VCloudPandora/ios-arch-iphone/libVCloudPandora_LivePull_ios.a',
-      ]
-      subspec.dependency 'TTSDK/Core'
-      subspec.dependency 'TTSDK/PlayerCore'
-      subspec.dependency 'CocoaAsyncSocket', '~> 7.6.4'
-    end
+    # spec.subspec 'LivePull' do |subspec|
+    #   subspec.public_header_files = [
+    #     'TTSDK/TTVideoLive/**/*.h',
+    #   ]
+    #   subspec.source_files = [
+    #     'TTSDK/TTVideoLive/**/*',
+    #   ]
+    #   subspec.vendored_libraries = [
+    #     'TTSDK/TTVideoLive/**/*.a',
+    #     'TTSDK/VCloudPandora/ios-arch-iphone/libVCloudPandora_LivePull_ios.a',
+    #   ]
+    #   subspec.dependency 'TTSDK/Core'
+    #   subspec.dependency 'TTSDK/PlayerCore'
+    #   subspec.dependency 'CocoaAsyncSocket', '~> 7.6.4'
+    # end
 
-    spec.subspec 'LivePush' do |subspec|
-      subspec.public_header_files = [
-        'TTSDK/LiveStreamFramework/prj/ios/LiveStreamFramework/**/*.h',
-        'TTSDK/LiveStreamFramework/prj/ios/LiveStreamAudioEffect/**/*.h',
-      ]
-      subspec.source_files = [
-        'TTSDK/LiveStreamFramework/**/*',
-      ]
-      subspec.vendored_libraries = [
-        'TTSDK/LiveStreamFramework/**/*.a',
-        'TTSDK/VCloudPandora/ios-arch-iphone/libVCloudPandora_LivePush_ios.a',
-      ]
-      subspec.frameworks = [
-        'VideoToolBox',
-        'AudioToolBox',
-        'CoreMotion',
-        'CoreMedia',
-        'AVFoundation',
-        'SystemConfiguration',
-        'GLKit',
-        'imageIO'
-      ]
-      subspec.dependency 'TTSDK/Core'
-      subspec.libraries = 'stdc++'
-    end
+    # spec.subspec 'LivePush' do |subspec|
+    #   subspec.public_header_files = [
+    #     'TTSDK/LiveStreamFramework/prj/ios/LiveStreamFramework/**/*.h',
+    #     'TTSDK/LiveStreamFramework/prj/ios/LiveStreamAudioEffect/**/*.h',
+    #   ]
+    #   subspec.source_files = [
+    #     'TTSDK/LiveStreamFramework/**/*',
+    #   ]
+    #   subspec.vendored_libraries = [
+    #     'TTSDK/LiveStreamFramework/**/*.a',
+    #     'TTSDK/VCloudPandora/ios-arch-iphone/libVCloudPandora_LivePush_ios.a',
+    #   ]
+    #   subspec.frameworks = [
+    #     'VideoToolBox',
+    #     'AudioToolBox',
+    #     'CoreMotion',
+    #     'CoreMedia',
+    #     'AVFoundation',
+    #     'SystemConfiguration',
+    #     'GLKit',
+    #     'imageIO'
+    #   ]
+    #   subspec.dependency 'TTSDK/Core'
+    #   subspec.libraries = 'stdc++'
+    # end
 
     spec.subspec 'Player' do |subspec|
       subspec.public_header_files = [
@@ -161,19 +161,19 @@
       subspec.dependency 'TTSDK/PlayerCore'
     end
 
-    spec.subspec 'Image' do |subspec|
-      subspec.public_header_files = [
-        'TTSDK/BDWebImageToB/**/*.h',
-      ]
-      subspec.source_files = [
-        'TTSDK/BDWebImageToB/**/*',
-      ]
-      subspec.vendored_libraries = [
-        'TTSDK/BDWebImageToB/**/*.a'
-      ]
-      subspec.dependency 'libwebp'
-      subspec.dependency 'MMKV'
-    end
+    # spec.subspec 'Image' do |subspec|
+    #   subspec.public_header_files = [
+    #     'TTSDK/BDWebImageToB/**/*.h',
+    #   ]
+    #   subspec.source_files = [
+    #     'TTSDK/BDWebImageToB/**/*',
+    #   ]
+    #   subspec.vendored_libraries = [
+    #     'TTSDK/BDWebImageToB/**/*.a'
+    #   ]
+    #   subspec.dependency 'libwebp'
+    #   subspec.dependency 'MMKV'
+    # end
     spec.subspec 'Uploader' do |subspec|
       subspec.public_header_files = [
         'TTSDK/TTFileUploadClientb/**/*.h',
